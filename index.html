@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>DoodleDots</title>
+</head>
+<body>
+    <div class="canvas">
+        <div class="tools-settings" onmousedown="return false">
+            <input id="color" type="color" name="color" value="#00000">
+            <img src="images/pencil.png" alt="Avatar" class="tools selected pointer" id="pencil" data-selected="true">
+            <img src="images/eraser.png" alt="Avatar" class="tools pointer" id="eraser" data-selected="false">
+            <img src="images/picker.png" alt="Avatar" class="tools pointer" id="picker" data-selected="false">
+            <img src="images/rainbow.png" alt="Avatar" class="tools pointer" id="rainbow" data-selected="false">
+            <img src="images/darken.png" alt="Avatar" class="tools pointer" id="darken" data-selected="false">
+            <img src="images/lighten.png" alt="Avatar" class="tools pointer" id="lighten" data-selected="false">
+        </div>
+
+        <div class="sketch-board">
+            <div id="container" onmousedown="return false">
+            </div>
+        </div>
+
+        <div class="board-settings">
+            <img src="images/grid.png" alt="Avatar" id="grid-btn" class="selected pointer" onclick="toggleGrid()" onmousedown="return false">
+            <div class="size">
+                <label><h2 id="size-label">16 X 16</h2></label>
+                <input id="size" type="range" name="size" min="16" max="100" value="16" data-sizing="px" class="slider">
+            </div>
+            <img src="images/reset.png" alt="Avatar" onclick="reset()" class="pointer" onmousedown="return false">
+        </div>
+    </div>
+    <footer>
+        <p>Done By: zDoomsdayz</p>
+    </footer>
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
