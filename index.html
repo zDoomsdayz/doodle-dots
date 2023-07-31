@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="/images/favicon.ico?v=2">
+    <link rel="shortcut icon" href="favicon.ico"/>
     <title>DoodleDots</title>
 </head>
 <body>
     <div class="canvas">
         <div class="tools-settings" onmousedown="return false">
             <input id="color" type="color" name="color" value="#00000">
-            <img src="images/pencil.png" alt="Avatar" class="tools selected pointer" id="pencil" data-selected="true">
-            <img src="images/eraser.png" alt="Avatar" class="tools pointer" id="eraser" data-selected="false">
-            <img src="images/picker.png" alt="Avatar" class="tools pointer" id="picker" data-selected="false">
-            <img src="images/rainbow.png" alt="Avatar" class="tools pointer" id="rainbow" data-selected="false">
-            <img src="images/darken.png" alt="Avatar" class="tools pointer" id="darken" data-selected="false">
-            <img src="images/lighten.png" alt="Avatar" class="tools pointer" id="lighten" data-selected="false">
+            <img src="images/pencil.png" alt="pencil" class="tools selected pointer" id="pencil" data-selected="true">
+            <img src="images/eraser.png" alt="eraser" class="tools pointer" id="eraser" data-selected="false">
+            <img src="images/picker.png" alt="picker" class="tools pointer" id="picker" data-selected="false">
+            <img src="images/rainbow.png" alt="rainbow" class="tools pointer" id="rainbow" data-selected="false">
+            <img src="images/darken.png" alt="darken" class="tools pointer" id="darken" data-selected="false">
+            <img src="images/lighten.png" alt="lighten" class="tools pointer" id="lighten" data-selected="false">
         </div>
 
         <div class="sketch-board">
@@ -25,12 +25,12 @@
         </div>
 
         <div class="board-settings">
-            <img src="images/grid.png" alt="Avatar" id="grid-btn" class="selected pointer" onclick="toggleGrid()" onmousedown="return false">
+            <img src="images/grid.png" alt="grid" id="grid-btn" class="selected pointer" onclick="toggleGrid()" onmousedown="return false">
             <div class="size">
                 <label><h2 id="size-label">16 X 16</h2></label>
                 <input id="size" type="range" name="size" min="16" max="100" value="16" data-sizing="px" class="slider">
             </div>
-            <img src="images/reset.png" alt="Avatar" onclick="reset()" class="pointer" onmousedown="return false">
+            <img src="images/reset.png" alt="reset" onclick="reset()" class="pointer" onmousedown="return false">
         </div>
     </div>
     <footer>
